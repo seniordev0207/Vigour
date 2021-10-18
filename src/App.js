@@ -6,7 +6,7 @@ import Footer from './components/Shared/Footer/Footer';
 import Navbar from './components/Shared/Navbar/Navbar';
 import NotFound404 from './components/NotFound404';
 import AuthContext from './components/AuthContext/AuthContext';
-import Login from './components/AuthenticationPages/LoginPage/Login';
+import AuthenticationPages from './components/AuthenticationPages/AuthenticationPages';
 
 function App() {
   return (
@@ -18,7 +18,8 @@ function App() {
             <Switch>
               <Route path="/home"><HomePage /></Route>
               <Route exact path="/"><HomePage /></Route>
-              <Route path="/login"><Login /></Route>
+              <Route path="/login"><AuthenticationPages /></Route>
+              <Route path="/signup"><AuthenticationPages /></Route>
               <Route path="*"><NotFound404 /></Route>
             </Switch>
             <Footer />
