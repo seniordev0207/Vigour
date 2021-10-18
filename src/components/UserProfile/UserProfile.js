@@ -3,7 +3,7 @@ import "./UserProfile.css";
 import useUserContext from '../../hooks/useUserContext';
 
 const UserProfile = () => {
-    const { user } = useUserContext();
+    const { user, logout } = useUserContext();
     return (
         <section className="profile container text-center">
             <div className="my-4">
@@ -15,6 +15,8 @@ const UserProfile = () => {
             </div>
             <h1 className="fw-bold"><span className="gradient-text">{user?.displayName}</span></h1>
             <h5><span className="gradient-text">{user?.email}</span></h5>
+            <button onClick={logout}
+                className="btn gradient-button fs-5 px-5 my-4">Sign Out</button>
         </section>
     );
 };

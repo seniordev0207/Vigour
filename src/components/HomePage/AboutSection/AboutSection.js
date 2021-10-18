@@ -13,7 +13,7 @@ const AboutSection = () => {
                         Search for a Vigour medical expert by specialty, disease, conditione, expertise, or doctor's last name.
                     </p>
                     <div className="mt-4">
-                        <button className="primary-button">Read more</button>
+                        <button className="btn gradient-button px-4">Read more</button>
                     </div>
                 </div>
                 <div className="text-center col-12 col-lg-6 col-xl-7">
