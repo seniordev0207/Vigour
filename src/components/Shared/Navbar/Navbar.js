@@ -48,7 +48,7 @@ const Navbar = () => {
                                         </div>
                                     </NavLink>
                                     <button className="btn text-white" style={{ background: '#f7565e' }}
-                                        onClick={logout}>Log out</button>
+                                        onClick={logout}>Log out <i class="fas fa-sign-out-alt"></i></button>
                                 </>
                             }
                         </div>

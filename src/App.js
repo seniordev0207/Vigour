@@ -10,6 +10,18 @@ import AuthenticationPages from './components/AuthenticationPages/Authentication
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import UserProfile from './components/UserProfile/UserProfile';
 
+
+function backToTop() {
+  for (let viewport = window.pageYOffset; viewport > 0; viewport--) {
+    window.scrollTo(0, viewport);
+  }
+}
+window.addEventListener('scroll', () => {
+  const topBut = document.getElementById('back-to-top-button');
+  window.scrollY > 150 ? topBut.style.display = 'flex' : topBut.style.display = 'none';
+})
+
+
 function App() {
   return (
     <>
@@ -26,6 +38,9 @@ function App() {
               <Route path="*"><NotFound404 /></Route>
             </Switch>
             <Footer />
+            <button id="back-to-top-button" onClick={backToTop}>
+              <i class="fas fa-arrow-up"></i>
+            </button>
           </div>
         </Router>
       </AuthContext>
