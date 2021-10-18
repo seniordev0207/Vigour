@@ -6,7 +6,7 @@ import Login from './LoginPage/Login';
 import SignUp from './SignUpPage/SignUp';
 
 const AuthenticationPages = () => {
-    const { user, googleLogin } = useUserContext();
+    const { user, googleLogin, githubLogin } = useUserContext();
     return (
         <section className="container text-center">
             {user ? <Redirect to="/profile" /> :
@@ -28,6 +28,9 @@ const AuthenticationPages = () => {
                     <p>Sign in with</p>
                     <span className='sign-in-buttons fs-1 p-0 m-4 mt-0' onClick={googleLogin} >
                         <i className="fab fa-google"></i>
+                    </span>
+                    <span className='sign-in-buttons fs-1 p-0 m-4 mt-0' onClick={githubLogin} >
+                        <i className="fab fa-github"></i>
                     </span>
                 </Router>
             }

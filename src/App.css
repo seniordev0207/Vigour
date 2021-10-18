@@ -37,6 +37,10 @@ p{
     background: linear-gradient(to right, #CD587E, #f7565e);
     cursor: pointer;
 }
+.gradient-button:hover{
+    color: white;
+    background: linear-gradient(to right, #f7565e, #CD587E);
+}
 
 
 span.gradient-text{
