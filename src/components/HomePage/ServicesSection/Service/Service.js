@@ -16,7 +16,7 @@ const Service = ({ service }) => {
                         <h1 className="h4 text-center">{name}</h1>
                         <div className="ps-2 ps-lg-4 pe-2 my-4">{
                             features.map((feature, index) => index < 5 &&
-                                <p className="my-2">
+                                <p className="my-2" key={index}>
                                     <i className="fas fa-check-circle" style={{ color: themeColor }}></i> {feature}
                                 </p>)
                         }</div>
