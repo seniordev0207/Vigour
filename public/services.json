@@ -1,0 +1,145 @@
+[
+    {
+        "id": 1,
+        "name": "Neurophysiology",
+        "features": [
+            "Auditory brainstem implant",
+            "Awake brain surgery",
+            "Carotid endarterectomy",
+            "Deep brain stimulation",
+            "Palliative care",
+            "Stereotactic radiosurgery",
+            "Concussion testing",
+            "Locomotor training",
+            "Sexuality and fertility management",
+            "Spasticity management",
+            "Upper extremity functional restoration"
+        ],
+        "svgURL": "/images/services/svg/neurophysiology.svg"
+    },
+    {
+        "id": 2,
+        "name": "Pulmonology",
+        "features": [
+            "Pulmonary function testing",
+            "Spirometry",
+            "Lung volume measurement",
+            "Diffusion capacity testing",
+            "Cardiopulmonary exercise testing",
+            "VO2 max test",
+            "Anaerobic threshold test",
+            "Oximetry studies",
+            "Six - minute walk test",
+            "Nocturnal oximetry",
+            "Radiography",
+            "Positron emission tomography"
+        ],
+        "svgURL": "/images/services/svg/pulmonology.svg"
+    },
+    {
+        "id": 3,
+        "name": "Gastroenterology",
+        "features": [
+            "Bariatric surgery",
+            "Barium enema",
+            "Biofeedback",
+            "Capsule endoscopy",
+            "Cholecystectomy (gallbladder removal)",
+            "Clinical nutrition counseling",
+            "Colectomy",
+            "Colonoscopy",
+            "Constipation evaluation",
+            "CT scan",
+            "Flexible sigmoidoscopy"
+        ],
+        "svgURL": "/images/services/svg/gastroenterology.svg"
+    },
+    {
+        "id": 4,
+        "name": "Cardiology",
+        "features": [
+            "Ablation therapy",
+            "Aortic root surgery",
+            "Atrial flutter ablation",
+            "Cardiac ablation",
+            "Cardiac catheterization",
+            "Cardioversion",
+            "Echocardiogram",
+            "Heart transplant",
+            "Holter monitor",
+            "Implantable loop recorder",
+            "Pacemaker"
+        ],
+        "svgURL": "/images/services/svg/cardiology.svg"
+    },
+    {
+        "id": 5,
+        "name": "Ophthalmology",
+        "features": [
+            "Aniseikonia",
+            "Blepharitis",
+            "Cataracts",
+            "Chemical burn",
+            "Coloboma",
+            "Drooping eyelid",
+            "Electrophysiology",
+            "Epiretinal membrane",
+            "Fuchs dystrophy",
+            "Keratoconus",
+            "Low vision"
+        ],
+        "svgURL": "/images/services/svg/ophthalmology.svg"
+    },
+    {
+        "id": 6,
+        "name": "Dentistry",
+        "features": [
+            "Dental hygiene",
+            "Dental sleep medicine",
+            "Maxillofacial prosthetics",
+            "Orofacial pain",
+            "TMD",
+            "Orthodontics",
+            "Dentofacial orthopedics",
+            "Periodontics",
+            "Prosthodontics"
+        ],
+        "svgURL": "/images/services/svg/dentistry.svg"
+    },
+    {
+        "id": 7,
+        "name": "Gynecology",
+        "features": [
+            "Pediatric surgery",
+            "Pediatric cardiac surgery",
+            "Digestive diseases",
+            "Neurology",
+            "Neurosurgery",
+            "Urology",
+            "Nephrology and hypertension",
+            "Neonatology",
+            "Oncology",
+            "Laboratory medicine and pathology",
+            "Clinical genomics"
+        ],
+        "svgURL": "/images/services/svg/gynecology.svg"
+    },
+    {
+        "id": 8,
+        "name": "Obstetrics",
+        "features": [
+            "Pediatric surgery",
+            "Pediatric cardiac surgery",
+            "Digestive diseases",
+            "Neurology",
+            "Neurosurgery",
+            "Urology",
+            "Nephrology and hypertension",
+            "Neonatology",
+            "Oncology",
+            "Laboratory medicine and pathology",
+            "Clinical genomics"
+        ],
+        "svgURL": "/images/services/svg/obstetrics.svg"
+    }
+]

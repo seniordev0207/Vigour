@@ -1,13 +1,18 @@
 .App{
     padding: 6rem 0.4rem;
 }
-
+*{
+    font-family: 'Aller',sans-serif;
+}
 h1{
-    font-family: 'Contra',sans-serif;
+    font-family: 'Contra',serif;
 }
 
 section{
     padding: 3rem 0;
+}
+p{
+    color: #666666;
 }
 
 .primary-button{
