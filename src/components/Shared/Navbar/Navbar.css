@@ -11,3 +11,8 @@ header.scrolling{
     background: #ffefcdaa;
     transform: scaleY(0.95);
 }
+
+.navBar-user-img{
+    width: 50px;
+    border-radius: 50%;
+}

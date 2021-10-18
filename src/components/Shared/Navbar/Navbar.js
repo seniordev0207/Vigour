@@ -1,10 +1,13 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import useUserContext from '../../../hooks/useUserContext';
 import changeNavbarBack from '../../../utilities/changeNavbarBack';
 import "./Navbar.css";
 
 const Navbar = () => {
     changeNavbarBack();
+
+    const { user, logout } = useUserContext();
     return (
         <header className="position-fixed top-0 w-100">
             <nav className="navbar navbar-expand-lg navbar-light p-4">
@@ -26,10 +29,22 @@ const Navbar = () => {
                                 <NavLink className="nav-link fs-5" to="/contact" activeStyle={{ color: '#f7565e' }}>Contact</NavLink>
                             </li>
                         </ul>
-                        <div>
-                            <NavLink className="nav-link fs-5 text-center" to="/contact">
-                                <button className="btn text-white px-3" style={{ background: '#f7565e' }}>Login</button>
-                            </NavLink>
+                        <div className="text-center d-lg-flex align-items-center">
+                            {!user ?
+                                <NavLink className="nav-link fs-5 text-center" to="/login">
+                                    <button className="btn text-white px-3" style={{ background: '#f7565e' }}>Login</button>
+                                </NavLink>
+                                : <>
+                                    <div className="d-flex align-items-center justify-content-center">
+                                        <h6 className="m-0">{user?.displayName}</h6>
+                                        {user.photoURL &&
+                                            <img src={user.photoURL} alt="" className="navBar-user-img m-3 my-lg-0" />
+                                        }
+                                    </div>
+                                    <button className="btn btn-danger"
+                                        onClick={logout}>Log out</button>
+                                </>
+                            }
                         </div>
                     </div>
                 </div>
