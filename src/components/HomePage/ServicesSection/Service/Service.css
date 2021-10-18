@@ -1,0 +1,31 @@
+
+.service{
+    border-radius: 10px;
+    position: relative;
+}
+.service:hover .service-shadow{ opacity: 0.5 }
+.service-shadow{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    filter: blur(10px);
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.service-img-container{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border-width: 0;
+    border-style: solid;
+    transition: background 500ms ease;
+}
+
+.service:hover .service-img-container{
+    background: white !important;
+    border-width: 2px;
+}
+.service:hover img{
+    filter: brightness(0)
+}

@@ -16,7 +16,8 @@
             "Upper extremity functional restoration"
         ],
         "svgURL": "/images/services/svg/neurophysiology.svg",
-        "imgURL": "/images/services/img/neurophysiology.jpg"
+        "imgURL": "/images/services/img/neurophysiology.jpg",
+        "themeColor": "#b059b2"
     },
     {
         "id": 2,
@@ -36,7 +37,8 @@
             "Positron emission tomography"
         ],
         "svgURL": "/images/services/svg/pulmonology.svg",
-        "imgURL": "/images/services/img/pulmonology.jpg"
+        "imgURL": "/images/services/img/pulmonology.jpg",
+        "themeColor": "#7f65c1"
     },
     {
         "id": 3,
@@ -55,7 +57,8 @@
             "Flexible sigmoidoscopy"
         ],
         "svgURL": "/images/services/svg/gastroenterology.svg",
-        "imgURL": "/images/services/img/gastroenterology.jpg"
+        "imgURL": "/images/services/img/gastroenterology.jpg",
+        "themeColor": "#866ee5"
     },
     {
         "id": 4,
@@ -74,7 +77,8 @@
             "Pacemaker"
         ],
         "svgURL": "/images/services/svg/cardiology.svg",
-        "imgURL": "/images/services/img/cardiology.jpg"
+        "imgURL": "/images/services/img/cardiology.jpg",
+        "themeColor": "#c085d7"
     },
     {
         "id": 5,
@@ -93,7 +97,8 @@
             "Low vision"
         ],
         "svgURL": "/images/services/svg/ophthalmology.svg",
-        "imgURL": "/images/services/img/ophthalmology.jpg"
+        "imgURL": "/images/services/img/ophthalmology.jpg",
+        "themeColor": "#566cd3"
     },
     {
         "id": 6,
@@ -110,7 +115,8 @@
             "Prosthodontics"
         ],
         "svgURL": "/images/services/svg/dentistry.svg",
-        "imgURL": "/images/services/img/dentistry.jpg"
+        "imgURL": "/images/services/img/dentistry.jpg",
+        "themeColor": "#5fc3e0"
     },
     {
         "id": 7,
@@ -129,7 +135,8 @@
             "Clinical genomics"
         ],
         "svgURL": "/images/services/svg/gynecology.svg",
-        "imgURL": "/images/services/img/gynecology.jpg"
+        "imgURL": "/images/services/img/gynecology.jpg",
+        "themeColor": "#9ca1c7"
     },
     {
         "id": 8,
@@ -148,6 +155,7 @@
             "Clinical genomics"
         ],
         "svgURL": "/images/services/svg/obstetrics.svg",
-        "imgURL": "/images/services/img/obstetrics.jpg"
+        "imgURL": "/images/services/img/obstetrics.jpg",
+        "themeColor": "#c4467a"
     }
 ]
