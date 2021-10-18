@@ -1,0 +1,10 @@
+
+.footer{
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+.footer-links p{
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #d6d6d6;
+}
