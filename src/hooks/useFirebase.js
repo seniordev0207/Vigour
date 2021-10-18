@@ -9,11 +9,14 @@ initializeFirebase();
 const auth = getAuth();
 const useFirebase = () => {
     const [user, setUser] = useState(null);
+    const [userLoading, setUserLoading] = useState(true);
     const [error, setError] = useState(null);
     useEffect(() => user && setError(null), [user])
 
+
     onAuthStateChanged(auth, newUser => {
         newUser ? setUser(newUser) : user && setUser(null);
+        newUser && userLoading && setUserLoading(false);
     })
 
     const googleLogin = () => signInGoogle(auth).catch(err => setError(err));
@@ -23,7 +26,7 @@ const useFirebase = () => {
 
     return {
         auth, user, setUser, googleLogin, emailSignUp, emailLogin,
-        logout, error, setError
+        logout, error, setError, userLoading
     }
 };
 

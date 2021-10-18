@@ -23,6 +23,13 @@ p{
     padding: 8px 20px;
 }
 
+
+span.gradient-text{
+    background: linear-gradient(to right, #CD587E, #f7565e);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @media screen and (min-width: 768px) {
     .App{ padding: 7rem 0 0 }
     section{padding: 6rem 0}

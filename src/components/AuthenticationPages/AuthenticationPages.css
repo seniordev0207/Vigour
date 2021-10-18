@@ -1,9 +1,5 @@
 
-.form-heading span{
-    background: linear-gradient(to right, #CD587E, #f7565e);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 .form-heading i{
     font-size: 40px;
     background: linear-gradient(#CD587E, #f7565e);

@@ -22,7 +22,7 @@ const SignUp = () => {
             <form className="text-center" onSubmit={handleSubmit} >
                 <div className="form-heading fw-bold">
                     <i className="fas fa-user-plus"></i> <br />
-                    <span className="fs-2">Create Account</span>
+                    <span className="fs-2 gradient-text">Create Account</span>
                 </div>
                 <div className="mt-4 text-danger">
                     {error && handleFirebaseError(error)}

@@ -35,13 +35,18 @@ const Navbar = () => {
                                     <button className="btn text-white px-3" style={{ background: '#f7565e' }}>Login</button>
                                 </NavLink>
                                 : <>
-                                    <div className="d-flex align-items-center justify-content-center">
-                                        {user.displayName &&
-                                            <h6 className="m-3 my-lg-0">{user.displayName}</h6>}
-                                        {user.photoURL &&
-                                            <img src={user.photoURL} alt="" className="navBar-user-img m-3 my-lg-0" />
-                                        }
-                                    </div>
+                                    <NavLink to="/profile" style={{ textDecoration: 'none', color: '#c5000a' }}>
+                                        <div className="d-flex align-items-center justify-content-center">
+                                            {user.displayName &&
+                                                <h6 className="m-3 me-0 my-lg-0">{user.displayName}</h6>}
+                                            {user.photoURL ?
+                                                <img src={user.photoURL} alt="" className="navBar-user-img m-3 my-lg-0" />
+                                                : <span className="gradient-text m-3 my-lg-0 fs-4">
+                                                    <i className="fas fa-user-circle"></i>
+                                                </span>
+                                            }
+                                        </div>
+                                    </NavLink>
                                     <button className="btn text-white" style={{ background: '#f7565e' }}
                                         onClick={logout}>Log out</button>
                                 </>
