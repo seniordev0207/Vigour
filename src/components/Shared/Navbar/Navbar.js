@@ -1,10 +1,13 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import changeNavbarBack from '../../../utilities/changeNavbarBack';
+import "./Navbar.css";
 
 const Navbar = () => {
+    changeNavbarBack();
     return (
         <header className="position-fixed top-0 w-100">
-            <nav className="navbar navbar-expand-lg navbar-light py-4 bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light py-4">
                 <div className="container">
                     <NavLink to="/"
                         className="navbar-brand d-flex justify-content-center me-5">

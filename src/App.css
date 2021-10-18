@@ -24,6 +24,6 @@ p{
 }
 
 @media screen and (min-width: 768px) {
-    .App{ padding: 9rem 0.6rem 0 }
+    .App{ padding: 9rem 0 0 }
     section{padding: 6rem 0}
 }

@@ -1,0 +1,13 @@
+header{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    transform: scale(1.1);
+    transition: background 600ms, transform 500ms;
+    transform-origin: top;
+}
+
+header.scrolling{
+    background: #ffefcdaa;
+    transform: scaleY(0.95);
+}
