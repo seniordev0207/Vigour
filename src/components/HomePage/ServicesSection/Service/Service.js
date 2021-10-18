@@ -4,7 +4,7 @@ const Service = ({ service }) => {
     return (
         <div style={{ background: 'darkred', color: 'white' }}>
             <h4>{service.name}</h4>
-            <img src={service.svgURL} alt="" />
+            <img src={service.imgURL} alt="" />
         </div>
     );
 };

@@ -15,7 +15,8 @@
             "Spasticity management",
             "Upper extremity functional restoration"
         ],
-        "svgURL": "/images/services/svg/neurophysiology.svg"
+        "svgURL": "/images/services/svg/neurophysiology.svg",
+        "imgURL": "/images/services/img/neurophysiology.jpg"
     },
     {
         "id": 2,
@@ -34,7 +35,8 @@
             "Radiography",
             "Positron emission tomography"
         ],
-        "svgURL": "/images/services/svg/pulmonology.svg"
+        "svgURL": "/images/services/svg/pulmonology.svg",
+        "imgURL": "/images/services/img/pulmonology.jpg"
     },
     {
         "id": 3,
@@ -52,7 +54,8 @@
             "CT scan",
             "Flexible sigmoidoscopy"
         ],
-        "svgURL": "/images/services/svg/gastroenterology.svg"
+        "svgURL": "/images/services/svg/gastroenterology.svg",
+        "imgURL": "/images/services/img/gastroenterology.jpg"
     },
     {
         "id": 4,
@@ -70,7 +73,8 @@
             "Implantable loop recorder",
             "Pacemaker"
         ],
-        "svgURL": "/images/services/svg/cardiology.svg"
+        "svgURL": "/images/services/svg/cardiology.svg",
+        "imgURL": "/images/services/img/cardiology.jpg"
     },
     {
         "id": 5,
@@ -88,7 +92,8 @@
             "Keratoconus",
             "Low vision"
         ],
-        "svgURL": "/images/services/svg/ophthalmology.svg"
+        "svgURL": "/images/services/svg/ophthalmology.svg",
+        "imgURL": "/images/services/img/ophthalmology.jpg"
     },
     {
         "id": 6,
@@ -104,7 +109,8 @@
             "Periodontics",
             "Prosthodontics"
         ],
-        "svgURL": "/images/services/svg/dentistry.svg"
+        "svgURL": "/images/services/svg/dentistry.svg",
+        "imgURL": "/images/services/img/dentistry.jpg"
     },
     {
         "id": 7,
@@ -122,7 +128,8 @@
             "Laboratory medicine and pathology",
             "Clinical genomics"
         ],
-        "svgURL": "/images/services/svg/gynecology.svg"
+        "svgURL": "/images/services/svg/gynecology.svg",
+        "imgURL": "/images/services/img/gynecology.jpg"
     },
     {
         "id": 8,
@@ -140,6 +147,7 @@
             "Laboratory medicine and pathology",
             "Clinical genomics"
         ],
-        "svgURL": "/images/services/svg/obstetrics.svg"
+        "svgURL": "/images/services/svg/obstetrics.svg",
+        "imgURL": "/images/services/img/obstetrics.jpg"
     }
 ]
