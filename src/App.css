@@ -30,6 +30,7 @@ p{
     border: 0;
     border-radius: 10px;
     background: #f7565e;
+    z-index: 499;
 }
 
 .gradient-button{

@@ -1,7 +1,7 @@
 header{
     background: #ffffff55;
     backdrop-filter: blur(10px);
-    z-index: 100;
+    z-index: 1000;
     transform: scale(1.1);
     transition: background 600ms, transform 500ms;
     transform-origin: top;
@@ -15,4 +15,22 @@ header.scrolling{
 .navBar-user-img{
     width: 50px;
     border-radius: 50%;
+}
+
+.nav-item{
+    position: relative;
+}
+.nav-item:hover::after{
+    transform: translateX(-50%) scaleX(1);
+}
+.nav-item::after{
+    content: '';
+    background: #f7565e;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 80%;
+    height: 3px;
+    transform: translateX(-50%) scaleX(0);
+    transition: transform 200ms;
 }
