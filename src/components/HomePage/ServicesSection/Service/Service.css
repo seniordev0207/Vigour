@@ -1,4 +1,7 @@
 
+.services .col{ transition: transform 700ms }
+.services .col:hover{ transform: translateY(-15px) }
+
 .service{
     border-radius: 10px;
     position: relative;
@@ -29,3 +32,6 @@
 .service:hover img{
     filter: brightness(0)
 }
+
+.service-btn{ text-shadow: 0 0 10px (#00000061) }
+.service-btn:hover{ filter: contrast(1.2) }
