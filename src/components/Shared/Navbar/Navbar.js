@@ -36,12 +36,13 @@ const Navbar = () => {
                                 </NavLink>
                                 : <>
                                     <div className="d-flex align-items-center justify-content-center">
-                                        <h6 className="m-0">{user?.displayName}</h6>
+                                        {user.displayName &&
+                                            <h6 className="m-3 my-lg-0">{user.displayName}</h6>}
                                         {user.photoURL &&
                                             <img src={user.photoURL} alt="" className="navBar-user-img m-3 my-lg-0" />
                                         }
                                     </div>
-                                    <button className="btn btn-danger"
+                                    <button className="btn text-white" style={{ background: '#f7565e' }}
                                         onClick={logout}>Log out</button>
                                 </>
                             }
