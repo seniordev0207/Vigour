@@ -2,13 +2,13 @@
 .covid19-section .col > div{
     position: relative;
     transition: 300ms;
-    border-bottom-color: #f7565e;
+    border-bottom-color: white;
     border-bottom-style: solid;
-    border-bottom-width: 0;
+    border-bottom-width: 5px;
 }
 .covid19-section .col > div:hover{
     box-shadow: 0 0 20px #cccccc;
     border-radius: 10px;
     transform: translateY(-10px);
-    border-bottom-width: 5px;
+    border-bottom-color: #f7565e;
 }
