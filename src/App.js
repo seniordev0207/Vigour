@@ -9,6 +9,7 @@ import AuthContext from './components/AuthContext/AuthContext';
 import AuthenticationPages from './components/AuthenticationPages/AuthenticationPages';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import UserProfile from './components/UserProfile/UserProfile';
+import ContactPage from './components/ContactPage/ContactPage';
 
 
 function backToTop() {
@@ -35,6 +36,7 @@ function App() {
               <Route path="/login"><AuthenticationPages /></Route>
               <Route path="/signup"><AuthenticationPages /></Route>
               <PrivateRoute path="/profile"><UserProfile /></PrivateRoute>
+              <PrivateRoute path="/contact"><ContactPage /></PrivateRoute>
               <Route path="*"><NotFound404 /></Route>
             </Switch>
             <Footer />
