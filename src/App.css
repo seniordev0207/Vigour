@@ -1,5 +1,5 @@
 .App{
-    padding: 6rem 0.4rem 0;
+    padding: 6rem 0 0;
 }
 *{
     font-family: 'Aller',sans-serif;
@@ -48,6 +48,7 @@ span.gradient-text{
     background: linear-gradient(to right, #CD587E, #f7565e);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: inherit;
 }
 
 @media screen and (min-width: 768px) {

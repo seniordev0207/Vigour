@@ -26,6 +26,9 @@ const Navbar = () => {
                                 <NavLink className="nav-link fs-5" to="/home" activeStyle={{ color: '#f7565e' }}>Home</NavLink>
                             </li>
                             <li className="nav-item text-center">
+                                <NavLink className="nav-link fs-5" to="/covid19" activeStyle={{ color: '#f7565e' }}>Covid-19 Zone</NavLink>
+                            </li>
+                            <li className="nav-item text-center">
                                 <NavLink className="nav-link fs-5" to="/contact" activeStyle={{ color: '#f7565e' }}>Contact</NavLink>
                             </li>
                         </ul>

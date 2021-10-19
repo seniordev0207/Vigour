@@ -11,6 +11,7 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import UserProfile from './components/UserProfile/UserProfile';
 import ContactPage from './components/ContactPage/ContactPage';
 import ServiceDetails from './components/HomePage/ServicesSection/ServiceDetails/ServiceDetails';
+import CovidPage from './components/CovidPage/CovidPage';
 
 
 function backToTop() {
@@ -39,6 +40,7 @@ function App() {
               <PrivateRoute path="/profile"><UserProfile /></PrivateRoute>
               <PrivateRoute path="/contact"><ContactPage /></PrivateRoute>
               <PrivateRoute path="/service/:serviceID"><ServiceDetails /></PrivateRoute>
+              <Route path="/covid19"><CovidPage /></Route>
               <Route path="*"><NotFound404 /></Route>
             </Switch>
             <Footer />
