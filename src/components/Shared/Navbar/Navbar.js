@@ -5,9 +5,10 @@ import changeNavbarBack from '../../../utilities/changeNavbarBack';
 import "./Navbar.css";
 
 const Navbar = () => {
-    changeNavbarBack();
+    changeNavbarBack(); // change navbar background when scrolling
 
     const { user, logout } = useUserContext();
+
     return (
         <header className="position-fixed top-0 w-100">
             <nav className="navbar navbar-expand-lg navbar-light p-4">
@@ -41,7 +42,7 @@ const Navbar = () => {
                                     <NavLink to="/profile" style={{ textDecoration: 'none', color: '#c5000a' }}>
                                         <div className="d-flex align-items-center justify-content-center">
                                             {user.displayName &&
-                                                <h6 className="m-3 me-0 my-lg-0">{user.displayName}</h6>}
+                                                <h6 className="m-3 me-0 my-lg-0 text-capitalize">{user.displayName}</h6>}
                                             {user.photoURL ?
                                                 <img src={user.photoURL} alt="" className="navBar-user-img m-3 my-lg-0" />
                                                 : <span className="gradient-text m-3 my-lg-0 fs-4">

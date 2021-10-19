@@ -1,11 +1,11 @@
 
+// handle firebase errors and return understandable text
 const handleFirebaseError = err => {
     console.log(err.message, err);
     let errMessage;
     if (err.message) {
         switch (err.message) {
-            case "password length<6":
-                errMessage = "Password must not be less than 6 characters"; break;
+            case "weak password": errMessage = "Password must have one number, one lowercase, one uppercase and at least 6 characters long"; break;
             case "Firebase: Error (auth/account-exists-with-different-credential).":
                 errMessage = "Account Exists with this email"; break;
             case "Firebase: Error (auth/user-not-found).":

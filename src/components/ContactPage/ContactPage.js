@@ -10,15 +10,15 @@ const ContactPage = () => {
                     <i className="fas fa-envelope-open-text"></i> <br />
                     <span className="fs-2 gradient-text">Contact Us</span>
                 </div>
-                <div className="auth-form-input-wrapper">
+                <div className="form-input-wrapper">
                     <input type="text" name="name" id="nameInput" placeholder="Name" defaultValue={user?.displayName} required />
                     <label>Name</label>
                 </div>
-                <div className="auth-form-input-wrapper">
+                <div className="form-input-wrapper">
                     <input type="email" name="email" id="emailInput" placeholder="Email" defaultValue={user?.email} required />
                     <label>Email</label>
                 </div>
-                <div className="auth-form-input-wrapper">
+                <div className="form-input-wrapper">
                     <textarea name="message" id="messageInput" rows="10" placeholder="Message"></textarea>
                     <label>Type Your Message Here</label>
                 </div>

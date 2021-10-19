@@ -13,7 +13,7 @@ const UserProfile = () => {
                     </span>
                 }
             </div>
-            <h1 className="fw-bold"><span className="gradient-text">{user?.displayName}</span></h1>
+            <h1 className="fw-bold text-capitalize"><span className="gradient-text">{user?.displayName}</span></h1>
             <h5><span className="gradient-text">{user?.email}</span></h5>
             <button onClick={logout}
                 className="btn gradient-button fs-5 px-5 my-4">Sign Out</button>

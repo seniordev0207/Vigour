@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import handleFirebaseError from '../../../Firebase/handleFirebaseError';
+import passwordValidator from '../../../Firebase/password-validator';
 import useUserContext from '../../../hooks/useUserContext';
 
 const SignUp = () => {
@@ -17,7 +18,7 @@ const SignUp = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         const { name, email, password } = inputs;
-        (password.length >= 6) && emailSignUp(name, email, password);
+        passwordValidator(password) ? emailSignUp(name, email, password) : setError({ message: "weak password" })
     }
     return (
         <>
@@ -26,15 +27,15 @@ const SignUp = () => {
                     <i className="fas fa-user-plus"></i> <br />
                     <span className="fs-2 gradient-text">Create Account</span>
                 </div>
-                <div className="auth-form-input-wrapper">
+                <div className="form-input-wrapper">
                     <input type="text" name="name" id="nameInput" placeholder="Name" onChange={handleInput} required />
                     <label>Name</label>
                 </div>
-                <div className="auth-form-input-wrapper">
+                <div className="form-input-wrapper">
                     <input type="email" name="email" id="emailInput" placeholder="Email" onChange={handleInput} required />
                     <label>Email</label>
                 </div>
-                <div className="auth-form-input-wrapper">
+                <div className="form-input-wrapper">
                     <input type="password" name="password" id="passwordInput" placeholder="Password" onChange={handleInput} required />
                     <label>Password</label>
                 </div>

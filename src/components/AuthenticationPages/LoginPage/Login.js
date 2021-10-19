@@ -26,11 +26,11 @@ const Login = () => {
                     <i className="fas fa-user"></i> <br />
                     <span className="fs-2 gradient-text">Login</span>
                 </div>
-                <div className="auth-form-input-wrapper">
+                <div className="form-input-wrapper">
                     <input type="email" name="email" id="emailInput" placeholder="Email" onChange={handleInput} required />
                     <label>Email</label>
                 </div>
-                <div className="auth-form-input-wrapper">
+                <div className="form-input-wrapper">
                     <input type="password" name="password" id="passwordInput" placeholder="Password" onChange={handleInput} required />
                     <label>Password</label>
                 </div>
