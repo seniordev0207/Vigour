@@ -10,6 +10,7 @@ import AuthenticationPages from './components/AuthenticationPages/Authentication
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import UserProfile from './components/UserProfile/UserProfile';
 import ContactPage from './components/ContactPage/ContactPage';
+import ServiceDetails from './components/HomePage/ServicesSection/ServiceDetails/ServiceDetails';
 
 
 function backToTop() {
@@ -37,11 +38,12 @@ function App() {
               <Route path="/signup"><AuthenticationPages /></Route>
               <PrivateRoute path="/profile"><UserProfile /></PrivateRoute>
               <PrivateRoute path="/contact"><ContactPage /></PrivateRoute>
+              <PrivateRoute path="/service/:serviceID"><ServiceDetails /></PrivateRoute>
               <Route path="*"><NotFound404 /></Route>
             </Switch>
             <Footer />
             <button id="back-to-top-button" onClick={backToTop}>
-              <i class="fas fa-arrow-up"></i>
+              <i className="fas fa-arrow-up"></i>
             </button>
           </div>
         </Router>

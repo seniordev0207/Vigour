@@ -4,10 +4,10 @@ import useUserContext from '../../hooks/useUserContext';
 const ContactPage = () => {
     const { user } = useUserContext();
     return (
-        <div>
+        <section className="container">
             <form className="text-center" >
                 <div className="form-heading fw-bold">
-                    <i className="fas fa-contact"></i> <br />
+                    <i className="fas fa-envelope-open-text"></i> <br />
                     <span className="fs-2 gradient-text">Contact Us</span>
                 </div>
                 <div className="auth-form-input-wrapper">
@@ -24,7 +24,7 @@ const ContactPage = () => {
                 </div>
                 <input type="submit" className="gradient-button btn text-white fs-5 px-4" value="Submit" />
             </form>
-        </div>
+        </section>
     );
 };
 

@@ -38,7 +38,7 @@
         ],
         "svgURL": "/images/services/svg/pulmonology.svg",
         "imgURL": "/images/services/img/pulmonology.jpg",
-        "themeColor": "#7f65c1"
+        "themeColor": "#f7565e"
     },
     {
         "id": 3,
@@ -78,7 +78,7 @@
         ],
         "svgURL": "/images/services/svg/cardiology.svg",
         "imgURL": "/images/services/img/cardiology.jpg",
-        "themeColor": "#c085d7"
+        "themeColor": "#00c775"
     },
     {
         "id": 5,

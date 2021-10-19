@@ -1,8 +1,10 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import "./Service.css";
 
 const Service = ({ service }) => {
-    const { name, features, svgURL, themeColor } = service;
+    const history = useHistory();
+    const { id, name, features, svgURL, themeColor } = service;
     return (
         <>
             <div className="col p-3">
@@ -20,7 +22,7 @@ const Service = ({ service }) => {
                                     <i className="fas fa-check-circle" style={{ color: themeColor }}></i> {feature}
                                 </p>)
                         }</div>
-                        <button
+                        <button onClick={() => history.push(`/service/${id}`)}
                             className="service-btn w-100 border-0 text-white px-4 py-2 rounded-3"
                             style={{ background: themeColor }}>Learn More</button>
                     </div>
