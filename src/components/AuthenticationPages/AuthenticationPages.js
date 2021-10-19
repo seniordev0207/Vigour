@@ -7,7 +7,7 @@ import SignUp from './SignUpPage/SignUp';
 
 // authentication page, login or sign up from this component
 const AuthenticationPages = () => {
-    const { user, googleLogin, githubLogin } = useUserContext();
+    const { user, googleLogin, githubLogin, facebookLogin } = useUserContext();
 
     const pathname = useLocation()?.state?.from.pathname || '/profile';
 
@@ -34,11 +34,14 @@ const AuthenticationPages = () => {
                         </Route>
                     </Switch>
                     <p>Sign in with</p>
-                    <span className='sign-in-buttons fs-1 p-0 m-4 mt-0' onClick={googleLogin} >
+                    <span className='sign-in-buttons fs-1 p-0 m-4 mt-0' onClick={googleLogin} title="Sign In With Google" >
                         <i className="fab fa-google"></i>
                     </span>
-                    <span className='sign-in-buttons fs-1 p-0 m-4 mt-0' onClick={githubLogin} >
+                    <span className='sign-in-buttons fs-1 p-0 m-4 mt-0' onClick={githubLogin} title="Sign In With GitHub" >
                         <i className="fab fa-github"></i>
+                    </span>
+                    <span className='sign-in-buttons fs-1 p-0 m-4 mt-0' onClick={facebookLogin} title="Sign In With Facebook" >
+                        <i className="fab fa-facebook"></i>
                     </span>
                 </Router>
             }

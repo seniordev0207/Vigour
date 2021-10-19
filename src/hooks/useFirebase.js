@@ -2,6 +2,7 @@ import { getAuth, onAuthStateChanged, signOut } from "@firebase/auth";
 import { useEffect, useState } from "react";
 import initializeFirebase from "../Firebase/initialize-firebase";
 import signInEmail from "../Firebase/sign-in-email";
+import signInFB from "../Firebase/sign-in-facebook";
 import signInGitHub from "../Firebase/sign-in-github";
 import signInGoogle from "../Firebase/sign-in-google";
 import signUpEmail from "../Firebase/sign-up-email";
@@ -24,6 +25,7 @@ const useFirebase = () => {
     })
 
     // login or signup functions
+    const facebookLogin = () => signInFB(auth).catch(err => setError(err));
     const githubLogin = () => signInGitHub(auth).catch(err => setError(err));
     const googleLogin = () => signInGoogle(auth).catch(err => setError(err));
     const emailSignUp = (name, email, password) => signUpEmail(auth, name, email, password).catch(err => setError(err));
@@ -33,7 +35,7 @@ const useFirebase = () => {
 
     // return need values from this function
     return {
-        auth, user, setUser, googleLogin, githubLogin,
+        auth, user, setUser, googleLogin, githubLogin, facebookLogin,
         emailSignUp, emailLogin, logout, error, setError, userLoading
     }
 };
