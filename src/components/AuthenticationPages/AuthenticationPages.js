@@ -1,15 +1,23 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, NavLink, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, NavLink, Redirect, useLocation } from 'react-router-dom';
 import useUserContext from '../../hooks/useUserContext';
 import "./AuthenticationPages.css";
 import Login from './LoginPage/Login';
 import SignUp from './SignUpPage/SignUp';
 
+// authentication page, login or sign up from this component
 const AuthenticationPages = () => {
     const { user, googleLogin, githubLogin } = useUserContext();
+
+    const pathname = useLocation()?.state?.from.pathname || '/profile';
+
     return (
         <section className="container text-center">
-            {user ? <Redirect to="/profile" /> :
+            {
+                pathname !== '/profile' &&
+                <h5 className="mb-5">You've to login first to visit {pathname.slice(1, pathname.length).toUpperCase()} page</h5>
+            }
+            {user ? <Redirect to={pathname} /> :
                 <Router>
                     <Switch>
                         <Route path="/login">

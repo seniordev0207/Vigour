@@ -40,7 +40,7 @@ function App() {
               <PrivateRoute path="/profile"><UserProfile /></PrivateRoute>
               <PrivateRoute path="/contact"><ContactPage /></PrivateRoute>
               <PrivateRoute path="/service/:serviceID"><ServiceDetails /></PrivateRoute>
-              <Route path="/covid19"><CovidPage /></Route>
+              <PrivateRoute path="/covid19"><CovidPage /></PrivateRoute>
               <Route path="*"><NotFound404 /></Route>
             </Switch>
             <Footer />

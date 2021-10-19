@@ -4,21 +4,26 @@ import useUserContext from '../../../hooks/useUserContext';
 
 const Login = () => {
     const { emailLogin, error, setError } = useUserContext();
-    useEffect(() => setError(null), [setError])
 
+    useEffect(() => setError(null), [setError]); // clear previous errors
+
+    // set inputs inside a state
     const [inputs, setInputs] = useState({
         email: '', password: ''
     })
+    // handle form input
     const handleInput = (event) => {
         const newInputs = { ...inputs };
         newInputs[event.target.name] = event.target.value;
         setInputs(newInputs);
     }
+    // handle form submition
     const handleSubmit = (event) => {
         event.preventDefault();
         const { email, password } = inputs;
         (password.length >= 6) && emailLogin(email, password);
     }
+
     return (
         <>
             <form className="text-center" onSubmit={handleSubmit} >
