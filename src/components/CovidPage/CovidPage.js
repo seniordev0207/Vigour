@@ -16,8 +16,7 @@ const CovidPage = () => {
                                 Maintain safety rules to stay safe from covid-19 epidemic.
                             </h6>
                             <div>
-                                <button className="btn btn-danger fs-5 px-3" onClick={() => history.push('/signup')}>Sign Up</button>
-                                <button className="btn btn-danger fs-5 mx-4 px-3" onClick={() => history.push('/login')}>Login</button>
+                                <button className="btn gradient-button fs-5 px-3">Read More</button>
                             </div>
                         </div>
                         <div className="d-flex justify-content-end align-items-end">
@@ -38,7 +37,7 @@ const CovidPage = () => {
                         <p className="px-2 my-3">
                             The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. Another factor is whether the spread is sustained, spreading continually without stopping.
                         </p>
-                        <div className="row row-cols-2 g-0 fs-5 fw-bold text-danger">
+                        <div className="row row-cols-1 row-cols-sm-2 g-0 fs-5 fw-bold text-danger">
                             <div className="px-3">
                                 <ul>
                                     <li>Fever</li>
@@ -69,7 +68,7 @@ const CovidPage = () => {
                             <br /> <br />
                             COVID-19 is a new disease and there is limited information regarding risk factors for severe disease.
                         </p>
-                        <div className="row row-cols-2 g-4">
+                        <div className="row row-cols-1 row-cols-md-2 g-4">
                             <div className="p-3">
                                 <div className="d-flex justify-content-start align-items-center shadow-lg px-2 py-4 rounded-3">
                                     <div className="px-3">
