@@ -1,5 +1,4 @@
 import React from 'react';
-import "./AboutSection.css";
 
 const AboutSection = () => {
     return (
@@ -7,7 +6,7 @@ const AboutSection = () => {
             <div className="row">
                 <div className="col-12 col-lg-6 col-xl-5 pe-5
                 d-flex flex-column justify-content-center">
-                    <h6>About Us</h6>
+                    <h6 className="muted-pill">About Us</h6>
                     <h1 className="my-4">A Modern Approach to Primary Care</h1>
                     <p>
                         Search for a Vigour medical expert by specialty, disease, conditione, expertise, or doctor's last name.

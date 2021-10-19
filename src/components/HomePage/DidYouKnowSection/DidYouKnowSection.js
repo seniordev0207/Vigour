@@ -1,5 +1,4 @@
 import React from 'react';
-import "./DidYouKnowSection.css";
 
 const DidYouKnowSection = () => {
     return (
@@ -8,7 +7,7 @@ const DidYouKnowSection = () => {
                 <div className="col-0 col-lg-1 col-xl-2"></div>
                 <div className="col-12 col-lg-4 col-xl-4 px-5 px-lg-0 pe-lg-5
                 d-flex flex-column justify-content-center">
-                    <h6>Did You Know?</h6>
+                    <h6 className="muted-pill">Did You Know?</h6>
                     <h1 className="my-4">Best laboratory analysis available the biggest distribution network</h1>
                     <p>
                         We help to match each patient’s unique profile to known targeted therapies, immunotherapies and clinical trials.
