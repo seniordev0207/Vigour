@@ -1,5 +1,10 @@
 import React from 'react';
 import "./Footer.css";
+import { NavLink } from 'react-router-dom';
+
+const footerLinkStyles = {
+    textDecoration: 'none', color: 'inherit'
+}
 
 const Footer = () => {
     return (
@@ -19,20 +24,20 @@ const Footer = () => {
                         <h1 className="h4">Medical Departments</h1>
                         <div className="footer-links row row-cols-2 my-4">
                             <div className="px-4">
-                                <p>Pulmonology</p>
+                                <p><NavLink style={footerLinkStyles} to="/service/2">Pulmonology</NavLink></p>
                                 <p>Rehabilitation</p>
                                 <p>Outpatient</p>
                                 <p>Oncology</p>
-                                <p>Ophthalmology</p>
-                                <p>Neurophysiology</p>
+                                <p><NavLink style={footerLinkStyles} to="/service/5">Ophthalmology</NavLink></p>
+                                <p><NavLink style={footerLinkStyles} to="/service/1">Neurophysiology</NavLink></p>
                             </div>
                             <div className="px-4">
-                                <p>Obstetrics</p>
-                                <p>Gynecology</p>
+                                <p><NavLink style={footerLinkStyles} to="/service/8">Obstetrics</NavLink></p>
+                                <p><NavLink style={footerLinkStyles} to="/service/7">Gynecology</NavLink></p>
                                 <p>Emergency</p>
-                                <p>Gastroenterology</p>
-                                <p>Dentistry</p>
-                                <p>Cardiology</p>
+                                <p><NavLink style={footerLinkStyles} to="/service/3">Gastroenterology</NavLink></p>
+                                <p><NavLink style={footerLinkStyles} to="/service/6">Dentistry</NavLink></p>
+                                <p><NavLink style={footerLinkStyles} to="/service/4">Cardiology</NavLink></p>
                             </div>
                         </div>
                     </div>
@@ -40,8 +45,8 @@ const Footer = () => {
                         <h1 className="h4">Useful Links</h1>
                         <div className="footer-links px-4 my-4">
                             <p>Our Team</p>
-                            <p>Contact Information</p>
-                            <p>Our Blog</p>
+                            <p><NavLink style={footerLinkStyles} to="/contact">Contact Information</NavLink></p>
+                            <p><NavLink style={footerLinkStyles} to="/covid19">Our Blog</NavLink></p>
                             <p>Products</p>
                             <p>Image Credits</p>
                         </div>
