@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import handleFirebaseError from '../../../Firebase/handleFirebaseError';
 import useUserContext from '../../../hooks/useUserContext';
 
 const Login = () => {
-    const { emailLogin, error } = useUserContext();
+    const { emailLogin, error, setError } = useUserContext();
+    useEffect(() => setError(null), [setError])
+
     const [inputs, setInputs] = useState({
         email: '', password: ''
     })
@@ -24,9 +26,6 @@ const Login = () => {
                     <i className="fas fa-user"></i> <br />
                     <span className="fs-2 gradient-text">Login</span>
                 </div>
-                <div className="mt-4 text-danger">
-                    {error && handleFirebaseError(error)
-                    }</div>
                 <div className="auth-form-input-wrapper">
                     <input type="email" name="email" id="emailInput" placeholder="Email" onChange={handleInput} required />
                     <label>Email</label>
@@ -35,6 +34,9 @@ const Login = () => {
                     <input type="password" name="password" id="passwordInput" placeholder="Password" onChange={handleInput} required />
                     <label>Password</label>
                 </div>
+                <div className="mt-4 mb-3" style={{ color: 'red' }}>
+                    {error && handleFirebaseError(error)
+                    }</div>
                 <input type="submit" className="submit-button btn text-white fs-5 px-4" value="Login" />
             </form>
         </>

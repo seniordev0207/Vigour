@@ -17,7 +17,7 @@ const useFirebase = () => {
 
     onAuthStateChanged(auth, newUser => {
         newUser ? setUser(newUser) : user && setUser(null);
-        newUser && userLoading && setUserLoading(false);
+        userLoading && setUserLoading(false);
     })
 
     const githubLogin = () => signInGitHub(auth).catch(err => setError(err));

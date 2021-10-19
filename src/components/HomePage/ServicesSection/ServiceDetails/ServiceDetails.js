@@ -5,10 +5,11 @@ import useServices from '../../../../hooks/useServices';
 const ServiceDetails = () => {
     const { serviceID } = useParams();
     const services = useServices();
-    const { id, name, features, imgURL, themeColor } = services ? services[serviceID - 1] : {};
+    const { name, features, imgURL, themeColor } = services ? services[serviceID - 1] : {};
     return (
         !services ? null :
             <section className="container d-flex flex-column align-items-center">
+                <small>services / {name}</small>
                 <img src={imgURL} alt="" width="700" className="rounded-3 shadow-lg" />
                 <h1 className="mt-5 mb-4" style={{ color: themeColor }}>{name}</h1>
                 <p>{
