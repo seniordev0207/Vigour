@@ -7,7 +7,7 @@ import SignUp from './SignUpPage/SignUp';
 
 // authentication page, login or sign up from this component
 const AuthenticationPages = () => {
-    const { user, googleLogin, githubLogin, facebookLogin } = useUserContext();
+    const { user, googleLogin, githubLogin, facebookLogin, emailLogin } = useUserContext();
 
     const pathname = useLocation()?.state?.from.pathname || '/profile';
 
@@ -43,6 +43,11 @@ const AuthenticationPages = () => {
                     <span className='sign-in-buttons fs-1 p-0 m-4 mt-0' onClick={facebookLogin} title="Sign In With Facebook" >
                         <i className="fab fa-facebook"></i>
                     </span>
+                    <br />
+                    <button onClick={() => emailLogin('demo@srt.com', 'Demo123')}
+                        className='gradient-button border-0 px-4 py-2 mt-5 mb-4 rounded'>Skip login</button>
+                    <br />
+                    <small>Click on "skip login" to visit private pages without login with email/google</small>
                 </Router>
             }
         </section>

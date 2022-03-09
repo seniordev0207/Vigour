@@ -1,9 +1,7 @@
 import React from 'react';
-import { useHistory } from 'react-router';
 import "./CovidPage.css";
 
 const CovidPage = () => {
-    const history = useHistory();
     return (
         <main>
             <div className="covid-banner" style={{ background: "url(/images/Covid19/covid19-background.jpg) center/cover no-repeat" }}>
