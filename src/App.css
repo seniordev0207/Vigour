@@ -1,29 +1,38 @@
-.App{
-    padding: 6rem 0 0;
+.App {
+    padding: 0rem 0 0;
 }
-section{
+
+section {
     padding: 3rem 0;
 }
+
 /* add responsiveness */
 @media screen and (min-width: 768px) {
-    .App{ padding: 7rem 0 0 }
-    section{padding: 6rem 0}
+    .App {
+        padding: 0rem 0 0
+    }
+
+    section {
+        padding: 6rem 0
+    }
 }
 
 /* common styles */
-*{
-    font-family: 'Aller',sans-serif;
+* {
+    font-family: 'Aller', sans-serif;
 }
-h1{
-    font-family: 'Contra',serif;
+
+h1 {
+    font-family: 'Contra', serif;
 }
-p{
+
+p {
     color: #666666;
 }
 
 
 /* go to top button styles */
-#back-to-top-button{
+#back-to-top-button {
     font-size: 30px;
     color: white;
     display: none;
@@ -41,18 +50,19 @@ p{
 }
 
 /* gradient color background button styles */
-.gradient-button{
+.gradient-button {
     color: white;
     background: linear-gradient(to right, #CD587E, #f7565e);
     cursor: pointer;
 }
-.gradient-button:hover{
+
+.gradient-button:hover {
     color: white;
     background: linear-gradient(to right, #f7565e, #CD587E);
 }
 
 /* gradient color filled text styles */
-span.gradient-text{
+span.gradient-text {
     background: linear-gradient(to right, #CD587E, #f7565e);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -60,7 +70,7 @@ span.gradient-text{
 }
 
 /* text muted pill shaped heading */
-h6.muted-pill{
+h6.muted-pill {
     width: max-content;
     color: #797979;
     border: 1px solid #bdbdbd;
@@ -70,18 +80,19 @@ h6.muted-pill{
 
 
 /* form styles */
-.form-heading i{
+.form-heading i {
     font-size: 40px;
     background: linear-gradient(#CD587E, #f7565e);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.submit-button{
+.submit-button {
     background: linear-gradient(to right, #CD587E, #f7565e);
     cursor: pointer;
 }
-.form-input-wrapper{
+
+.form-input-wrapper {
     background: transparent;
     position: relative;
     max-width: 500px;
@@ -90,7 +101,9 @@ h6.muted-pill{
     border-radius: 10px;
     box-shadow: 0 0 20px #e7e7e7;
 }
-.form-input-wrapper input, .form-input-wrapper textarea{
+
+.form-input-wrapper input,
+.form-input-wrapper textarea {
     background: transparent;
     font-size: 20px;
     width: 100%;
@@ -98,10 +111,15 @@ h6.muted-pill{
     outline: 0;
     padding: 15px 10px 10px;
 }
-.form-input-wrapper input::placeholder, .form-input-wrapper textarea::placeholder{ color: transparent; }
-.form-input-wrapper label{
+
+.form-input-wrapper input::placeholder,
+.form-input-wrapper textarea::placeholder {
+    color: transparent;
+}
+
+.form-input-wrapper label {
     background: white;
-    color:  #cd587d9f;
+    color: #cd587d9f;
     position: absolute;
     transition: 300ms;
     font-size: 15px;
@@ -113,9 +131,9 @@ h6.muted-pill{
     cursor: none;
     user-select: none;
 }
-.form-input-wrapper input:not(:focus):placeholder-shown + label,
-.form-input-wrapper textarea:not(:focus):placeholder-shown + label
-{
+
+.form-input-wrapper input:not(:focus):placeholder-shown+label,
+.form-input-wrapper textarea:not(:focus):placeholder-shown+label {
     font-size: 25px;
     color: #c3c3c3;
     top: 0;

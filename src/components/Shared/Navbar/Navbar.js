@@ -11,8 +11,8 @@ const Navbar = () => {
 
     return (
         <header className="position-fixed top-0 w-100">
-            <nav className="navbar navbar-expand-lg navbar-light p-4">
-                <div className="container">
+            <nav className="navbar navbar-expand-lg navbar-light px-4">
+                <div className="container px-0">
                     <NavLink to="/"
                         className="navbar-brand d-flex justify-content-center me-5">
                         <img src="/favicon.png" alt="" width="40" />
@@ -21,8 +21,8 @@ const Navbar = () => {
                     <button className="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navLinks">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div className="collapse navbar-collapse justify-content-end" id="navLinks">
+                        <ul className="navbar-nav mb-2 mb-lg-0 align-items-center">
                             <li className="nav-item text-center">
                                 <NavLink className="nav-link fs-5" to="/home" activeStyle={{ color: '#f7565e' }}>Home</NavLink>
                             </li>
