@@ -31,9 +31,8 @@ function App() {
       <AuthContext>
         <Router>
           <Navbar />
-          <div className="App">
+          <main>
             <Switch>
-              <Route path="/home"><HomePage /></Route>
               <Route exact path="/"><HomePage /></Route>
               <Route path="/login"><AuthenticationPages /></Route>
               <Route path="/signup"><AuthenticationPages /></Route>
@@ -47,7 +46,7 @@ function App() {
             <button id="back-to-top-button" onClick={backToTop}>
               <i className="fas fa-arrow-up"></i>
             </button>
-          </div>
+          </main>
         </Router>
       </AuthContext>
     </>

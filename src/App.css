@@ -1,35 +1,3 @@
-.App {
-    padding: 0rem 0 0;
-}
-
-section {
-    padding: 3rem 0;
-}
-
-/* add responsiveness */
-@media screen and (min-width: 768px) {
-    .App {
-        padding: 0rem 0 0
-    }
-
-    section {
-        padding: 6rem 0
-    }
-}
-
-/* common styles */
-* {
-    font-family: 'Aller', sans-serif;
-}
-
-h1 {
-    font-family: 'Contra', serif;
-}
-
-p {
-    color: #666666;
-}
-
 
 /* go to top button styles */
 #back-to-top-button {

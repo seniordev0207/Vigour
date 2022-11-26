@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+section {
+  padding: 3rem 0;
+}
+
+/* add responsiveness */
+@media screen and (min-width: 768px) {
+  section {
+      padding: 6rem 0
+  }
+}
+
+/* common styles */
+* {
+  font-family: 'Aller', sans-serif;
+}
+
+h1 {
+  font-family: 'Contra', serif;
+}
+
+p {
+  color: #666666;
+}

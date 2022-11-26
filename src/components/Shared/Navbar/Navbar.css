@@ -1,5 +1,5 @@
 header {
-    background: #ffdedebb;
+    background: transparent;
     backdrop-filter: blur(0.5rem);
     z-index: 1000;
     transform: scale(1);
@@ -12,10 +12,8 @@ header.scrolling {
     transform: scaleY(0.9);
 }
 
-@media screen and (min-width: 990px) {
-    header {
-        background: transparent;
-    }
+header:has(.navbar-collapse.show) {
+    background: #ffdedebb;
 }
 
 .navBar-user-img {
@@ -25,6 +23,7 @@ header.scrolling {
 
 .nav-item {
     position: relative;
+    mix-blend-mode: multiply;
 }
 
 .nav-item:hover::after {

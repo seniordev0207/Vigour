@@ -9,7 +9,7 @@ const PrivateRoute = ({ children, ...rest }) => {
             render={
                 ({ location }) => user ? children :
                     userLoading ? (<h1
-                        className="display-2 text-center py-5">Loading...</h1>)
+                        className="display-2 text-center fw-bold py-5 my-5"><span className='gradient-text'>Loading...</span></h1>)
                         : (<Redirect to={{
                             pathname: '/login',
                             state: { from: location }

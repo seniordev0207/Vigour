@@ -1,10 +1,9 @@
-import React from 'react';
 import "./CovidPage.css";
 
 const CovidPage = () => {
     return (
-        <main>
-            <div className="covid-banner" style={{ background: "url(/images/Covid19/covid19-background.jpg) center/cover no-repeat" }}>
+        <>
+            <div className="covid-banner">
                 <div>
                     <div className="row row-cols-1 row-cols-lg-2 g-0 justify-content-between">
                         <div className="left-col d-flex flex-column justify-content-center py-5 text-white">
@@ -114,7 +113,7 @@ const CovidPage = () => {
                     </div>
                 </div>
             </section>
-        </main>
+        </>
     );
 };
 
