@@ -66,7 +66,7 @@ const CovidPage = () => {
                             <br /> <br />
                             COVID-19 is a new disease and there is limited information regarding risk factors for severe disease.
                         </p>
-                        <div className="row row-cols-1 row-cols-md-2 g-4">
+                        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-1 row-cols-xxl-2 g-4">
                             <div className="p-3">
                                 <div className="d-flex justify-content-start align-items-center shadow-lg px-2 py-4 rounded-3">
                                     <div className="px-3">
